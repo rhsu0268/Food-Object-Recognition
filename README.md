@@ -1,13 +1,15 @@
 # Data Incubator Proposal 
 
-The following is an i-python notebook that consists of some code and preliminary analysis on the dataset that I found. 
+The following is an i-python notebook detailing the steps of my data analysis.
 
-I used Pandas to do a lot of data wrangling. 
+I used Pandas to read and wrangle the data. 
 
 I used Matplotlib to generate the plots and sci-kit learn to do some modeling. 
 
-Note that there are several sections of the file:
+The file is divided into three main sections:
 
-1. Pulling in Data
+1. Reading Data
 2. Exploratory Data Analysis
 3. Modeling Baseline 
+
+The modeling is not formal since there are parameters to tune.
