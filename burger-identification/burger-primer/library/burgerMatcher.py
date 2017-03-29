@@ -11,6 +11,7 @@ class BurgerMatcher:
     def search(self, queryKps, queryDescs):
         # initialize the dictionary of results
         results = {}
+        print("Searching...")
         
         # loop over the burger images
         for burgerPath in self.burgerPaths:
@@ -19,6 +20,7 @@ class BurgerMatcher:
             burger = cv2.imread(burgerPath)
             gray = cv2.cvtColor(burger, cv2.COLOR_BGR2GRAY)
             (kps, descs) = self.descriptor.describe(gray)
+            print(kps, descs)
             
             # determine the number of matched, inlier keypoints, 
             # then update the results
@@ -30,5 +32,5 @@ class BurgerMatcher:
             results = sorted([(v, k) for (k, v) in results.items() if v > 0], reverse = True)
             
         # return the results
-        return results
+        return "DONE"
             

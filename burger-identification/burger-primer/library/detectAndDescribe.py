@@ -11,6 +11,7 @@ class DetectAndDescribe:
         # detect keypoints in the image and extract local invariant descriptors 
         kps = self.detector.detect(image)
         (kps, descs) = self.descriptor.compute(image, kps)
+        print(kps, descs)
         
         # if there are no keypoints or descriptors, return None
         if len(kps) == 0:
